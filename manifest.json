@@ -1,0 +1,19 @@
+{
+  "name": "Babyshitter CAO auto fill extension",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "description": "Automatically fills babyshitter CAO online application form",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [{
+    "matches": ["https://atms.elavel-club.com/eticket/*/answer"],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "action": {
+    "default_title": "Babysitter CAO auto fill",
+    "default_popup": "popup.html"
+  }
+}
