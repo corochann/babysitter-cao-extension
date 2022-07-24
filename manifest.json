@@ -4,10 +4,10 @@
   "manifest_version": 3,
   "description": "Automatically fills babyshitter CAO online application form",
   "permissions": [
-    "storage"
+    "storage", "tabs"
   ],
   "content_scripts": [{
-    "matches": ["https://atms.elavel-club.com/eticket/*/answer"],
+    "matches": ["https://atms.elavel-club.com/eticket/*/answer*"],
     "js": [
       "content.js"
     ]

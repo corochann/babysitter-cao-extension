@@ -9,29 +9,33 @@
 </head>
 <body>
 
-<label>利用開始日: </label>
-<input id="start-date" type="text" value=""><br/>
-<label>利用開始時: </label>
-<input id="start-hours" type="text" value=""><br/>
-<label>利用開始分: </label>
-<input id="start-minutes" type="text" value=""><br/>
-<label>利用終了日: </label>
-<input id="end-date" type="text" value=""><br/>
-<label>利用終了時: </label>
-<input id="end-hours" type="text" value=""><br/>
-<label>利用終了分: </label>
-<input id="end-minutes" type="text" value=""><br/>
-<label>児童氏名: </label>
-<input id="child-name" type="text" value=""><br/>
-<label>児童生年月日: </label>
-<input id="child-birthday" type="text" value=""><br/>
-<label>ベビーシッター名: </label>
-<input id="babysitter-name" type="text" value=""><br/>
-<label>利用場所(都道府県): </label>
-<input id="place" type="text" value=""><br/>
+<p>利用開始日、終了日、生年月日は2022-06-08などのフォーマットで入力してください。(日時に0埋めが必要です。)</p>
+<table>
+    <tr><th><label for="start-date">利用開始日: </label></th>
+        <td><input id="start-date" type="text" value=""></td></tr>
+    <tr><th><label for="start-hours">利用開始時: </label></th>
+        <td><input id="start-hours" type="text" value=""></td></tr>
+    <tr><th><label for="start-minutes">利用開始分: </label></th>
+        <td><input id="start-minutes" type="text" value=""></td></tr>
+    <tr><th><label for="end-date">利用終了日: </label></th>
+        <td><input id="end-date" type="text" value=""><br/></td></tr>
+    <tr><th><label for="end-hours">利用終了時: </label></th>
+        <td><input id="end-hours" type="text" value=""><br/></td></tr>
+    <tr><th><label for="end-minutes">利用終了分: </label></th>
+        <td><input id="end-minutes" type="text" value=""><br/></td></tr>
+    <tr><th><label for="child-name">児童氏名: </label></th>
+        <td><input id="child-name" type="text" value=""><br/></td></tr>
+    <tr><th><label for="child-birthday">児童生年月日: </label></th>
+        <td><input id="child-birthday" type="text" value=""><br/></td></tr>
+    <tr><th><label for="babysitter-name">ベビーシッター名: </label></th>
+        <td><input id="babysitter-name" type="text" value=""><br/></td></tr>
+    <tr><th><label for="place">利用場所(都道府県): </label></th>
+        <td><input id="place" type="text" value=""><br/></td></tr>
+</table>
+
 <p id="message"></p>
-<button id="submit">保存</button>
-<p>保存ボタンを押した後に、電子申請画面にアクセス or リフレッシュしてください。</p>
+<button id="submit">Submit</button>
+<p>Submit ボタンを押すと現在の入力が保存され、電子申請画面にAuto fill されます。</p>
 <script src="popup.js"></script>
 </body>
 </html>
